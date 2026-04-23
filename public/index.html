@@ -1,12 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cinefy</title> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<header class="cabecalho">
+    <div class="cabecalho-conteudo">
+        <div class="logo"> 
+            <img src="img/logo_branca.png" alt="Cinefy" class="imagem-logo">
+        </div>
+        
+        <form class="formulario-pesquisa">
+            <input type="text" class="campo-pesquisa" placeholder="Pesquisar...">
+        </form>
+        
+        <nav class="menu-navegacao">
+            <a href="#secao1" class="item-menu">Filmes</a>
+            <a href="#secao2" class="item-menu">Séries</a>
+            <a href="#secao3" class="item-menu">Login</a>
+        </nav>
+    </div>
+</header>
+
+<main class="conteudo-principal">
+
+
+    <section class="secao-carrossel">
+        <div class="carrossel-imagens">
+            <div class="slide-carrossel ativo">
+                <div class="imagem-destaque">
+                    <img src="img/banner.jpg" alt="" width="100%">
+                </div>
+                    
+                <div class="texto-carrossel">
+                    <h2>Destaques </h2>
+                    <p>Explore os melhores filmes e séries</p>
+                    <p>Descubra novos favoritos agora</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-exploracao">
+            <div class="fundo-exploracao">
+        <img src="img/img2.jpg" alt="Explorar filmes e séries">
+    </div>
+
+        <h1 class="titulo-principal">Explore suas séries e filmes favoritos</h1>
+        <p class="subtitulo">Busque por títulos populares e descubra novos conteúdos</p>
+        
+        <form class="formulario-subscribe">
+            
+            <input type="email" class="campo-subscribe" placeholder="Digite um filme ou série">
+        </form>
+    </section>
+
+    <section class="secao-conteudo">
+        <article class="categoria-filmes">
+            <h2 class="titulo-categoria">Filmes</h2>
+            
+            <div class="grade-cards">
+                <div class="carrossel-container" id="carrossel-filmes">
+
+                    <div class="card-filme">
+                        <div class="imagem-card"> <img src="img/img-generica.jpg" alt="" width="100%"> </div>
+                        <div class="info-card">
+                            <p class="texto-cardtit">Kung Fu Panda</p>
+                            <p class="texto-card">Animação • Ação</p>
+                            <p class="texto-card">Um panda improvável se torna herói</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+
+                    <div class="card-filme">
+                        <div class="imagem-card"> <img src="img/img-generica.jpg" alt="" width="100%"> </div>
+                        <div class="info-card">
+                            <p class="texto-cardtit" > O Show de Truman</p>
+                            <p class="texto-card">Drama • Ficção</p>
+                            <p class="texto-card">Uma vida transmitida sem saber</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+
+                    <div class="card-filme">
+                        <div class="imagem-card"> <img src="img/img-generica.jpg" alt="" width="100%"> </div>
+                        <div class="info-card">
+                            <p class="texto-cardtit">Seven: Os 7 Pecados</p>
+                            <p class="texto-card">Suspense • Crime</p>
+                            <p class="texto-card">Um serial killer baseado nos pecados </p>
+                        </div>
+                        <button class="botao-ver"> Ver </button>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <article class="categoria-series">
+            <h2 class="titulo-categoria">Séries</h2>
+            
+            <div class="grade-cards">
+                <div class="carrossel-container" id="carrossel-series">
+
+                    <div class="card-serie">
+                        <div class="imagem-card"> <img src="img/img-generica.jpg" alt="" width="100%"> </div>
+                        <div class="info-card">
+                            <p class="texto-cardtit">Dexter</p>
+                            <p class="texto-card">Crime • Drama</p>
+                            <p class="texto-card">Um assassino com código moral</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+
+                    <div class="card-serie">
+                        <div class="imagem-card"> <img src="img/img-generica.jpg" alt="" width="100%"> </div>
+                        <div class="info-card">
+                            <p class="texto-cardtit">Breaking Bad</p>
+                            <p class="texto-card">Drama • Crime</p>
+                            <p class="texto-card">Professor vira produtor de drogas</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+
+                    <div class="card-serie">
+                        <div class="imagem-card"> <img src="img/img-generica.jpg" alt="" width="100%"> </div>
+                        <div class="info-card">
+                            <p class="texto-cardtit">Peaky Blinders</p>
+                            <p class="texto-card">Crime • Drama</p>
+                            <p class="texto-card">Gangue inglesa pós-guerra</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="secao-botoes">
+        <button class="botao-destaque">TOP SERIES</button>
+        <button class="botao-destaque">TOP FILMES</button>
+    </section>
+
+    <section class="secao-lancamentos">
+        <button class="botao-lancamentos">LANÇAMENTOS</button>
+    </section>
+
+</main>
+
+<footer class="rodape">
+    <p class="texto-rodape" style="font-weight: 600;">Cinefy 2026 - Todos os direitos reservados </p>
+</footer>
+
 </body>
-</html>
+</html> 
