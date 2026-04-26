@@ -8,7 +8,7 @@
 ### Projeto: Cinefy
 - Nome: **João Paulo de Castro**
 - Matricula: **908161**
-- Proposta de projeto escolhida: **Proposta 4:  Coleções e Itens**
+- Proposta de projeto escolhida: **Proposta 4: Coleções e Itens**
 - Breve descrição sobre seu projeto: **Desenvolvimento de um site simples no formato de blog/catálogo de filmes e séries, com navegação por categorias e sistema de busca.**
 
 
