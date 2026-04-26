@@ -44,13 +44,10 @@ body {
     justify-content: space-between;
 }
 
-
-
 .imagem-logo {
     height: 60px;
     max-height: 60px;
 }
-
 
 .formulario-pesquisa {
     flex: 1;
@@ -105,10 +102,13 @@ body {
 }
 
 
+
 .conteudo-principal {
-    margin-top: 120px;
+    margin-top: 100px;
     padding: 20px;
 }
+
+
 
 .secao-carrossel {
     position: relative;
@@ -116,7 +116,6 @@ body {
     margin: 0 auto 40px;
     height: 450px;
     background: linear-gradient(135deg, var(--cor-cinza-escuro) 0%, var(--cor-cinza-medio) 100%);
-    border: none;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -150,7 +149,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-
     background: linear-gradient(
         to right,
         rgba(0,0,0,0.5),
@@ -158,55 +156,6 @@ body {
         rgba(0,0,0,0.1)
     );
 }
-
-.texto-carrossel h2::after {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 4px;
-    background: var(--cor-amarelo);
-    margin-top: 8px;
-}
-
-.secao-exploracao {
-    position: relative;
-    overflow: hidden;
-}
-
-.fundo-exploracao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.fundo-exploracao img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.fundo-exploracao::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.secao-exploracao h1,
-.secao-exploracao p,
-.secao-exploracao form {
-    position: relative;
-    z-index: 2;
-}
-
-
 
 .texto-carrossel {
     position: absolute;
@@ -221,20 +170,24 @@ body {
     font-weight: 700;
     margin-bottom: 10px;
     color: white;
-
     text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.texto-carrossel h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background: var(--cor-amarelo);
+    margin-top: 8px;
 }
 
 .texto-carrossel p {
     font-size: 16px;
     margin-bottom: 6px;
     color: rgba(255,255,255,0.9);
-
     text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
 }
-
-
-
 
 .botao-carrossel {
     position: absolute;
@@ -263,16 +216,14 @@ body {
     box-shadow: 0 6px 16px rgba(255, 184, 0, 0.5);
 }
 
-.botao-esquerda {
-    left: 15px;
-}
+.botao-esquerda { left: 15px; }
+.botao-direita  { right: 15px; }
 
-.botao-direita {
-    right: 15px;
-}
 
 
 .secao-exploracao {
+    position: relative;
+    overflow: hidden;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto 40px;
@@ -280,6 +231,38 @@ body {
     background: linear-gradient(135deg, var(--cor-cinza-escuro) 0%, var(--cor-cinza-medio) 100%);
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fundo-exploracao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo-exploracao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.fundo-exploracao::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.secao-exploracao h1,
+.secao-exploracao p,
+.secao-exploracao form {
+    position: relative;
+    z-index: 2;
 }
 
 .titulo-principal {
@@ -320,6 +303,8 @@ body {
     transform: translateY(-2px);
 }
 
+
+
 .secao-conteudo {
     max-width: 1200px;
     margin: 0 auto;
@@ -328,7 +313,6 @@ body {
 .categoria-filmes,
 .categoria-series {
     background-color: var(--cor-branco);
-    border: none;
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 30px;
@@ -341,7 +325,6 @@ body {
     font-weight: 700;
     margin-bottom: 25px;
     color: var(--cor-cinza-escuro);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .grade-cards {
@@ -353,13 +336,11 @@ body {
     display: flex;
     gap: 25px;
     transition: transform 0.5s ease;
-    will-change: transform;
 }
 
 .card-filme,
 .card-serie {
     min-width: calc(33.333% - 17px);
-    border: none;
     border-radius: 12px;
     overflow: hidden;
     background-color: var(--cor-branco);
@@ -378,13 +359,13 @@ body {
 .imagem-card {
     width: 100%;
     height: 200px;
-    overflow: hidden; /* importante */
+    overflow: hidden;
 }
 
 .imagem-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* isso resolve */
+    object-fit: cover;
     display: block;
 }
 
@@ -394,20 +375,18 @@ body {
     background-color: var(--cor-fundo);
 }
 
+.info-card .texto-cardtit {
+    font-size: 19px;
+    margin-bottom: 6px;
+    color: var(--cor-cinza-escuro);
+    font-weight: 700;
+}
+
 .info-card .texto-card {
     font-size: 13px;
     margin-bottom: 6px;
     color: var(--cor-cinza-escuro);
 }
-
-.info-card .texto-cardtit {
-    font-size: 19px;
-    margin-bottom: 6px;
-    color: var(--cor-cinza-escuro);
-    font-weight: 1000;
-}
-
-
 
 .botao-ver {
     width: 90px;
@@ -432,7 +411,6 @@ body {
     box-shadow: 0 5px 12px rgba(255, 184, 0, 0.5);
 }
 
-/* Botões do carrossel de filmes/séries */
 .botao-carrossel-cards {
     position: absolute;
     top: 50%;
@@ -442,7 +420,6 @@ body {
     font-size: 20px;
     color: var(--cor-azul-escuro);
     cursor: pointer;
-    padding: 8px 12px;
     z-index: 10;
     border-radius: 50%;
     width: 40px;
@@ -460,13 +437,10 @@ body {
     box-shadow: 0 6px 16px rgba(255, 184, 0, 0.5);
 }
 
-.botao-prev {
-    left: -15px;
-}
+.botao-prev { left: -15px; }
+.botao-next { right: -15px; }
 
-.botao-next {
-    right: -15px;
-}
+
 
 .secao-botoes {
     max-width: 1200px;
@@ -523,6 +497,9 @@ body {
     box-shadow: 0 6px 16px rgba(255, 184, 0, 0.5);
 }
 
+
+
+
 .rodape {
     background-color: var(--cor-azul-escuro);
     border-top: 3px solid var(--cor-amarelo);
@@ -535,5 +512,224 @@ body {
 .rodape .texto-rodape {
     font-size: 14px;
     color: var(--cor-branco);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    
+    .formulario-pesquisa {
+        display: none;
+    }
+
+    .menu-navegacao {
+        gap: 8px;
+    }
+
+    .menu-navegacao .item-menu {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .imagem-logo {
+        height: 48px;
+    }
+
+    .secao-carrossel {
+        height: 320px;
+    }
+
+    .texto-carrossel {
+        top: 80px;
+        left: 35px;
+    }
+
+    .texto-carrossel h2 {
+        font-size: 30px;
+    }
+
+    .texto-carrossel p {
+        font-size: 14px;
+    }
+
+    .titulo-principal {
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+    }
+
+    .formulario-subscribe .campo-subscribe {
+        width: 100%;
+    }
+
+    .card-filme,
+    .card-serie {
+        min-width: calc(50% - 13px);
+    }
+
+    .botao-destaque {
+        padding: 14px 35px;
+        font-size: 15px;
+    }
+
+    .botao-lancamentos {
+        padding: 14px 60px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    
+    .cabecalho {
+        padding: 12px 0;
+    }
+
+    .cabecalho-conteudo {
+        flex-direction: column;       
+        align-items: stretch;
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .imagem-logo {
+        height: 40px;
+        align-self: center;
+    }
+
+    .formulario-pesquisa {
+        display: flex;
+        margin: 0;
+    }
+
+    .menu-navegacao {
+        justify-content: center;
+        flex-wrap: wrap;              
+        gap: 6px;
+    }
+
+    .menu-navegacao .item-menu {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+
+    .conteudo-principal {
+        margin-top: 170px;            
+        padding: 10px;
+    }
+
+    .secao-carrossel {
+        height: 220px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .texto-carrossel {
+        top: 50px;
+        left: 20px;
+        max-width: 85%;
+    }
+
+    .texto-carrossel h2 {
+        font-size: 22px;
+    }
+
+    .texto-carrossel h2::after {
+        width: 80px;
+        height: 3px;
+    }
+
+    .texto-carrossel p {
+        font-size: 12px;
+    }
+
+    .secao-exploracao {
+        padding: 30px 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .titulo-principal {
+        font-size: 22px;
+    }
+
+    .subtitulo {
+        font-size: 13px;
+    }
+
+    .formulario-subscribe .campo-subscribe {
+        width: 100%;
+        padding: 12px 18px;
+        font-size: 13px;
+    }
+
+    .categoria-filmes,
+    .categoria-series {
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .titulo-categoria {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card-filme,
+    .card-serie {
+        min-width: 100%;
+    }
+
+    .carrossel-container {
+        gap: 15px;
+    }
+
+    .imagem-card {
+        height: 160px;
+    }
+
+    .info-card .texto-cardtit {
+        font-size: 16px;
+    }
+
+    .info-card .texto-card {
+        font-size: 12px;
+    }
+
+    
+    .secao-botoes {
+        flex-direction: column;       
+        align-items: center;
+        gap: 15px;
+    }
+
+    .botao-destaque {
+        width: 100%;
+        max-width: 320px;
+        padding: 14px 0;
+        font-size: 15px;
+    }
+
+    .botao-lancamentos {
+        width: 100%;
+        max-width: 320px;
+        padding: 14px 0;
+        font-size: 15px;
+    }
+
+    .rodape {
+        padding: 18px 10px;
+        margin-top: 30px;
+    }
+
+    .rodape .texto-rodape {
+        font-size: 12px;
+    }
 }
