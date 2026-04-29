@@ -15,11 +15,11 @@
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
 
-![Wire frame print](/public/img/responsividade/resp_pc.png)
+![Print responsividade](/public/img/responsividade/resp_pc.png)
 
 
 ## Print da versão responsiva com CSS puro [MOBILE]
 
-![Print home-page](/public/img/responsividade/resp_phone.png)
+![Print responsividade Celular](/public/img/responsividade/resp_phone.png)
 
 
